@@ -1,14 +1,19 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-/* 
-*  almacenamos en app la ejecucion de express para tener todos
-*  los metodos disponibles en un objeto
-*/
-app.use(express.static(path.join(__dirname, 'public')));
-console.log(__dirname)
-// ************ Sistema de Ruteo require y use() ************
+
+/* rutas */
 const mainRutas = require('./routers/main');
+
+
+/* Configuramos la carpeta publica */
+app.use(express.static(path.join(__dirname, '../public')));
+
+/* Configuramos el motor de vistas */
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+
+
 app.use('/', mainRutas);
 
 app.listen(3000, ()=>{

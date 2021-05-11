@@ -24,7 +24,7 @@ Con un motor de plantillas ya no podemos usar **res.sendfile()** porque el archi
 
 Cuando hacemos render, podemos enviar datos a la vista para que estén disponibles. Eso lo hacemos agregando un segúndo parámetro al método **render()**.
 
-res.render('vista', {dato: valor});
+`res.render('vista', {dato: valor});`
 
 ## Los tags
 
@@ -56,3 +56,5 @@ También podemos pasarle parámetros
 ### Comentario
 
 <%# Comentario %>`
+<%/* Comentario */%>`
+<%// Comentario %>`

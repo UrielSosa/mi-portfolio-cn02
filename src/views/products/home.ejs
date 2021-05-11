@@ -10,17 +10,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
   <body>
-    <div class="mvc-top">
-      <div class="mvc-bar" id="myNavbar">
-        <a href="/" class="mvc-bar-item mvc-button">HOME</a>
-        <a href="/about" class="mvc-bar-item mvc-button mvc-hide-small"
-          ><i class="fa fa-user"></i> ABOUT</a
-        >
-        <a href="#portfolio" class="mvc-bar-item mvc-button mvc-hide-small"
-          ><i class="fa fa-th"></i> PORTFOLIO</a
-        >
-      </div>
-    </div>
+    <%- include('../partials/header', {title: 'Home'}) %>
 
     <div class="bgimg-1 mvc-display-container mvc-opacity-min" id="home">
       <div class="mvc-display-middle" style="white-space: nowrap">

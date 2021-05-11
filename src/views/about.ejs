@@ -10,17 +10,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
   <body>
-    <div class="mvc-top">
-      <div class="mvc-bar" id="myNavbar">
-        <a href="/" class="mvc-bar-item mvc-button">HOME</a>
-        <a href="/about" class="mvc-bar-item mvc-button mvc-hide-small"
-          ><i class="fa fa-user"></i> ABOUT</a
-        >
-        <a href="#portfolio" class="mvc-bar-item mvc-button mvc-hide-small"
-          ><i class="fa fa-th"></i> PORTFOLIO</a
-        >
-      </div>
-    </div>
+    <%- include('partials/header', {title}) %>
 
     <div class="bgimg-2 mvc-display-container mvc-opacity-min" id="home">
       <div class="mvc-display-middle" style="white-space: nowrap">
@@ -32,7 +22,7 @@
     </div>
 
     <div class="mvc-content mvc-container mvc-padding-64" id="about">
-      <h3 class="mvc-center">I love photography</h3>
+      <h3 class="mvc-center"><%= name %></h3>
       <p class="mvc-center"><em>is a hobby photographer...</em></p>
       <p>
         We have created a fictional "personal" website/blog, and our fictional
